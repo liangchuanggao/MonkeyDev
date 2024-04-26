@@ -300,7 +300,7 @@ function installXcode10LogosSupports(){
 
 	echo "install Xcode10 Logos Supports..."
 	chmod +x $MonkeyDevPath/Logos-Xcode/src/xclangspec_generator.py
-	python $MonkeyDevPath/Logos-Xcode/src/xclangspec_generator.py
+	python3 $MonkeyDevPath/Logos-Xcode/src/xclangspec_generator.py
 	chmod +x $MonkeyDevPath/Logos-Xcode/src/install.sh
 	sudo sh -x $MonkeyDevPath/Logos-Xcode/src/install.sh
 
