@@ -355,6 +355,7 @@ addToFileIfMissing "$userBashProfileFile" "^(export)? *MonkeyDevPath=.*" "export
 addToFileIfMissing "$userBashProfileFile" "^(export)? *MonkeyDevDeviceIP=.*" "export MonkeyDevDeviceIP="
 addToFileIfMissing "$userBashProfileFile" "^(export)? *PATH=.*(\\\$MonkeyDevPath\\/bin|${MonkeyDevPath//\//\\/}\\/bin).*" "export PATH=$MonkeyDevPath/bin:\$PATH"
 
+
 installXcode10LogosSupports
 
 exit 0
